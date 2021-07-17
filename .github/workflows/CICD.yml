@@ -80,3 +80,4 @@ jobs:
           zip_file: lambda_function.zip
           memory_size: 512
           timeout: 600
+          environment: FONTCONFIG_PATH=/var/task/fonts,S3BUCKET_NAME=test12345test123
