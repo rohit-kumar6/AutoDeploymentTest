@@ -1,0 +1,392 @@
+	<style type="text/css">
+	.flxmain_table {table-layout:fixed; border-collapse:collapse;border-spacing: 0}
+	table.flxmain_table td {overflow:hidden;padding: 0 1.5pt}
+	.flxmain_bordered_table {table-layout:fixed; border-collapse:collapse;border-spacing: 0;border:1px solid silver}
+	.flxmain_bordered_table td {overflow:hidden;padding: 0 1.5pt;border:1px solid silver}
+	 .imagediv {position:absolute;border:none}
+	 table td.imagecell {vertical-align:top;text-align:left;padding:0}
+	table td.flxHeading {background-color:#E7E7E7;text-align:center;border: 1px solid black;font-family:helvetica,arial,sans-serif;font-size:10pt}
+	 .flx0 {
+	  background-color:white;
+	  color:black;
+	  font-size:11pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:bottom;
+	  white-space:nowrap;
+	 }
+	
+	 .flx1 {
+	  background-color:white;
+	  color:black;
+	  font-size:10pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Calibri;
+	  text-align:left;
+	  vertical-align:bottom;
+	  white-space:nowrap;
+	 }
+	
+	 .flx2 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:bold;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:center;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx3 {
+	  background-color:white;
+	  color:black;
+	  font-size:10pt;
+	  font-weight:bold;
+	  font-style:normal;
+	  font-family:Calibri;
+	  text-align:left;
+	  vertical-align:top;
+	  white-space:nowrap;
+	 }
+	
+	 .flx4 {
+	  background-color:white;
+	  color:black;
+	  font-size:36pt;
+	  font-weight:bold;
+	  font-style:normal;
+	  font-family:Calibri;
+	  text-align:right;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx5 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx6 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:middle;
+	  white-space:nowrap;
+	 }
+	
+	 .flx7 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Calibri;
+	  text-align:left;
+	  vertical-align:bottom;
+	  white-space:nowrap;
+	 }
+	
+	 .flx8 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:bold;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:right;
+	  vertical-align:middle;
+	  white-space:nowrap;
+	 }
+	
+	 .flx9 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:center;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx10 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:center;
+	  vertical-align:middle;
+	  white-space:nowrap;
+	 }
+	
+	 .flx11 {
+	  background-color:black;
+	  color:white;
+	  font-size:12pt;
+	  font-weight:bold;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:center;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx12 {
+	  background-color:black;
+	  color:white;
+	  font-size:12pt;
+	  font-weight:bold;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:center;
+	  vertical-align:middle;
+	  white-space:nowrap;
+	 }
+	
+	 .flx13 {
+	  background-color:#e7e6e6;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:center;
+	  vertical-align:middle;
+	  white-space:nowrap;
+	 }
+	
+	 .flx14 {
+	  background-color:#e7e6e6;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:center;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx15 {
+	  background-color:#e7e6e6;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:middle;
+	  white-space:nowrap;
+	 }
+	
+	 .flx16 {
+	  background-color:#e7e6e6;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx17 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:top;
+	  white-space:normal;
+	 }
+	
+	 .flx18 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:right;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx19 {
+	  background-color:white;
+	  color:red;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:right;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx20 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:bottom;
+	  white-space:nowrap;
+	 }
+	
+	 .flx21 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:bold;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:middle;
+	  white-space:nowrap;
+	 }
+	
+	 .flx22 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:bold;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:right;
+	  vertical-align:bottom;
+	  white-space:nowrap;
+	 }
+	
+	 .flx23 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:right;
+	  vertical-align:bottom;
+	  white-space:normal;
+	 }
+	
+	 .flx24 {
+	  background-color:white;
+	  color:black;
+	  font-size:12pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:right;
+	  vertical-align:bottom;
+	  white-space:nowrap;
+	 }
+	
+	 .flx25 {
+	  background-color:white;
+	  color:black;
+	  font-size:11pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Calibri;
+	  text-align:left;
+	  vertical-align:top;
+	  white-space:normal;
+	 }
+	
+	 .flx26 {
+	  background-color:white;
+	  color:black;
+	  font-size:11pt;
+	  font-weight:bold;
+	  font-style:normal;
+	  font-family:Calibri;
+	  text-align:left;
+	  vertical-align:top;
+	  white-space:normal;
+	 }
+	
+	 .flx27 {
+	  background-color:white;
+	  color:black;
+	  font-size:10pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:middle;
+	  white-space:nowrap;
+	 }
+	
+	 .flx28 {
+	  background-color:white;
+	  color:black;
+	  font-size:10pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx29 {
+	  background-color:white;
+	  color:black;
+	  font-size:10pt;
+	  font-weight:bold;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:middle;
+	  white-space:normal;
+	 }
+	
+	 .flx30 {
+	  background-color:white;
+	  color:black;
+	  font-size:10pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:top;
+	  white-space:normal;
+	 }
+	
+	 .flx31 {
+	  background-color:white;
+	  color:black;
+	  font-size:10pt;
+	  font-weight:normal;
+	  font-style:normal;
+	  font-family:Arial;
+	  text-align:left;
+	  vertical-align:bottom;
+	  white-space:nowrap;
+	 }
+	</style>
