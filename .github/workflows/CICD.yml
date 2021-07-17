@@ -32,15 +32,17 @@ jobs:
           python3 -m pip install virtualenv
       - name: Setup carton-labels for deployment
         run: |
-          cd carton-labels
+          filepath=`pwd`
+          projectFolder="carton-labels"
+          cd $projectFolder
           python3 -m venv env
           source env/bin/activate
           python3 -m pip install -r requirements.txt
-          filepath=`pwd`
-          cp *.ttf $filepath/env/lib/python3.8/site-packages
-          cp *.py $filepath/env/lib/python3.8/site-packages
-          cd $filepath/env/lib/python3.8/site-packages
+          cp *.ttf $filepath/$projectFolder/env/lib/python3.8/site-packages
+          cp *.py $filepath/$projectFolder/env/lib/python3.8/site-packages
+          cd $filepath/$projectFolder/env/lib/python3.8/site-packages
           zip -r lambda_function.zip .
+          rm -f lambda_funcation.zip
           cp *.zip $filepath
       - name: deploy carton-labels to lambda
         uses: appleboy/lambda-action@master
@@ -54,17 +56,19 @@ jobs:
           timeout: 600
       - name: Setup invoice_pdf_creation for deployment
         run: |
-          cd invoice_pdf_creation
+          filepath=`pwd`
+          projectFolder="invoice_pdf_creation"
+          cd $projectFolder
           python3 -m venv env
           source env/bin/activate
           python3 -m pip install -r requirements.txt
-          filepath=`pwd`
-          cp *.html $filepath/env/lib/python3.8/site-packages
-          cp *.txt $filepath/env/lib/python3.8/site-packages
-          cp *.py $filepath/env/lib/python3.8/site-packages
-          cp -R fonts $filepath/env/lib/python3.8/site-packages
-          cd $filepath/env/lib/python3.8/site-packages
+          cp *.html $filepath/$projectFolder/env/lib/python3.8/site-packages
+          cp *.txt $filepath/$projectFolder/env/lib/python3.8/site-packages
+          cp *.py $filepath/$projectFolder/env/lib/python3.8/site-packages
+          cp -R fonts $filepath/$projectFolder/env/lib/python3.8/site-packages
+          cd $filepath/$projectFolder/env/lib/python3.8/site-packages
           zip -r lambda_function.zip .
+          rm -f lambda_funcation.zip
           cp *.zip $filepath
       - name: deploy invoice_pdf_creation to lambda
         uses: appleboy/lambda-action@master
