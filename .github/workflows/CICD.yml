@@ -54,6 +54,8 @@ jobs:
           zip_file: lambda_function.zip
           memory_size: 512
           timeout: 600
+          handler: lambda_function.lambda_handler
+          runtime: python3.8
       - name: Setup invoice_pdf_creation for deployment
         run: |
           filepath=`pwd`
@@ -81,3 +83,5 @@ jobs:
           memory_size: 512
           timeout: 600
           environment: FONTCONFIG_PATH=/var/task/fonts,S3BUCKET_NAME=test12345test123
+          handler: lambda_function.lambda_handler
+          runtime: python3.8
