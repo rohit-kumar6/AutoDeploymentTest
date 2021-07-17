@@ -40,7 +40,7 @@ jobs:
           cp -R fonts $filepath/env/lib/python3.8/site-packages
           cd $filepath/env/lib/python3.8/site-packages
           rm -f lambda_function.zip
-          zip -r lambda_funcation.zip .
+          zip -r lambda_function.zip .
           ls
       - name: deploy to lambda
         uses: appleboy/lambda-action@master
@@ -49,4 +49,4 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: us-east-1
           function_name: test1
-          zip_file: lambda_funcation.zip
+          zip_file: lambda_function.zip
