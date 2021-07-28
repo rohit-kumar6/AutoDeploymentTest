@@ -42,6 +42,7 @@ jobs:
           zip -r lambda_function.zip .
           rm -f lambda_funcation.zip
           cp *.zip $filepath
+          ls
       - name: deploy carton-labels to lambda
         uses: appleboy/lambda-action@master
         with:
@@ -50,10 +51,6 @@ jobs:
           aws_region: us-east-1
           function_name: test2
           zip_file: lambda_function.zip
-          memory_size: 512
-          timeout: 600
-          handler: lambda_function.lambda_handler
-          runtime: python3.8
       - name: Setup invoice_pdf_creation for deployment
         run: |
           filepath=`pwd`
