@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
 # Controls when the workflow will run
@@ -50,7 +48,7 @@ jobs:
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: us-east-1
-          function_name: arn:aws:lambda:us-east-1:341859456668:function:test2
+          function_name: test2
           zip_file: lambda_function.zip
           memory_size: 512
           timeout: 600
